@@ -30,6 +30,13 @@ In addition to using the shell tool `gsutil` to access the storage system, we ca
 pip3 install google-cloud-storage
 ```
 
+A very detailed notebook has been created where we understand the differend APIs to read and write data to and from GCS
+
+## Key learnings
+1. We can use shell tool `gsutil` to interact with GCS
+2. Google-cloud-storage module has the APIs to programatically interact with GCS using python
+3. We can directly read and write files from GCS using Pandas, with the help of `gcsfs` library
+
 
 
 
