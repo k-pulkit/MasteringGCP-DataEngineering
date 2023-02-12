@@ -1,5 +1,6 @@
 # Ignore
 data/*
+gcp-venv/*
 
 
 # Byte-compiled / optimized / DLL files

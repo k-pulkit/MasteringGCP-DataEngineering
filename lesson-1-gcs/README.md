@@ -1,5 +1,12 @@
 # Google Cloud Object Storage
 
+##### _Related code and notebooks_
+1. <a href="./buckets.sh">buckets.sh</a> - Contains the use of shell tool `gsutil` to access GCS
+2. <a href="./setting-up-data-lake-gcs-notebook.ipynb">setting-up-data-lake-gcs-notebook.ipynb</a> - Python notebook where we use the google cloud module to control GCS storage  
+
+----
+##### Info on Google Cloud Storage
+
 GCS is similar to object storage offering on other cloud platfoms, such as S3 in AWS.
 Some of the key point about GCS - 
 1. The data in GCS can be made redundant and highly available by using multi-region approach
@@ -16,4 +23,14 @@ gsutil mb gs://<bucket-name>
 # To explore a command use
 gsutil help ls
 ```
+
+In addition to using the shell tool `gsutil` to access the storage system, we can also take help of different of the API for programming languages like Python. To enable this, we need to install the python library for google cloud using -
+
+```shell
+pip3 install google-cloud-storage
+```
+
+
+
+
 
