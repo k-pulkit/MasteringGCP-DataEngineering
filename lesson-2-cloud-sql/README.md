@@ -27,3 +27,8 @@ To make the data transfers encryted, we can make use of SSL as well. The same sh
 
 After this, we can move ahead with the development by setting up databases and namespaces for the users.
 
+##### Short key points when using Python to access the Cloud SQL (more in python notebook)
+- Make use of Google Secret Manager to store the details like, hostname, db_name, user, password
+- Without `pandas` we can make use of `psycopg2.connect` and run commands using a curson object `connection.cursor` 
+- We can optimise the workflow by using combination of `sqlalchemy` and `pandas`
+- Specifically and briefly, `to_sql` and `read_sql` methods
