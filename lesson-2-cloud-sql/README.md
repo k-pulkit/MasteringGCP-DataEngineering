@@ -5,6 +5,7 @@
 2. <a href="./create_db_tables_pg.sql">Create table schemas</a> - Sql file to create tables  
 3. <a href="./load_db_tables_pg.sql">Load Data</a> - Sql file to insert data
 4. <a href="./explore.sql">Working with Data</a> - Running SQL commands againsts the datasets
+4. <a href="./using-psql-with-python.ipynb">Using python to work with PSQL</a> - We make use of `psycopg2` to interact with PSQL, as well as we use Pandas for the same
 
 ----
 ##### Info on Google Cloud SQL
@@ -22,5 +23,7 @@ Post setting up the connection to the server, we can connect to the database ser
 ```shell
 psql --host=localhost --port=54321 --username=postgres --dbname=postgres -W
 ``` 
+To make the data transfers encryted, we can make use of SSL as well. The same should be enabled on server side.
+
 After this, we can move ahead with the development by setting up databases and namespaces for the users.
 
